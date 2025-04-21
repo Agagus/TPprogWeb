@@ -4,4 +4,5 @@ Integrantes:
   - Tatiana Veliz Amestoy
   - Mariano Martinez
   - Hernan Gonzalez
-  - Zanetti Agustina
+  - Agustina Zanetti
+  - Analuz Ornella Banega Lavallen
