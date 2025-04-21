@@ -1,3 +1,10 @@
 *{
-    background-color:blue;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: antiquewhite;
+}
+.cajaTitulo{
+    text-align: center;
+    padding: 20px;
+    background-color: red;
 }
