@@ -1,0 +1,26 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+    background-color: #99db1e;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto p  {
+
+color: rgb(119, 201, 26);
+background-color: transparent ;
+
+
+}
+
+.contacto {
+    background-color: rgba(247, 255, 240, 0.897);
+    border: solid grey 1px;
+    border-radius: 1rem;
+    border-style: dashed;
+}
+
