@@ -1,5 +1,5 @@
 * {
-  background-color: #d0f392;
+  background-color: #F5FFEB;
   margin: 0;
   box-sizing: border-box;
 }
@@ -8,11 +8,37 @@
   display: flex;
   font-size: 40px;
   justify-content: center;
-  background-color: #C5D2BAE5;
+  background-color: #C5D2BA;
   padding: 20px;
+  color: #FFFFFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contenedor-descuentos {
   font-size: 50px;
+  background-color: #A5B694;
+}
+
+.contenedor-footer {
+  background-color: #C5D2BA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.contacto {
+  padding: 1rem;
+  width: 80%;
+  height: 25vh;
+  display: flex;
+  justify-content:space-around;
+}
+
+.card-contacto{
+  padding: 1rem;
+  border: dashed 1px #A5B694 ;
+  border-radius: 1rem;
+  color: #000000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Times, serif;
 }
