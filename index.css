@@ -68,6 +68,7 @@
 }
 
 .card-contacto{
+  justify-items: center;
   padding: 1rem;
   border: dashed 1px #A5B694 ;
   border-radius: 1rem;
