@@ -7,38 +7,27 @@
 .contenedor-header {
   display: flex;
   font-size: 40px;
-<<<<<<< HEAD
-  justify-content: space-between;  
-=======
   justify-content: space-between;
   align-items: center;
->>>>>>> befc485fa249393e482e288003b8faabbad13abb
   background-color: #87C159;
   padding: 20px;
   color: #FFFFFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   height: 100px;
 }
-<<<<<<< HEAD
-=======
 
 .contenedor-header h2{
   background-color: transparent;
 
 }
 
->>>>>>> befc485fa249393e482e288003b8faabbad13abb
 .imagenes1 img { 
   height: 30px;
 }
 .imagenes1 {
-<<<<<<< HEAD
-height: 80px;
-=======
   height: 80px;
   background-color: transparent;
   align-content: center;
->>>>>>> befc485fa249393e482e288003b8faabbad13abb
 }
 
 .contenedor-descuentos {
