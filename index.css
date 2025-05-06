@@ -1,5 +1,5 @@
 * {
-  background-color: #d0f392;
+  background-color: #FEE3A2;
   margin: 0;
   box-sizing: border-box;
 }
@@ -7,33 +7,44 @@
 .contenedor-header {
   display: flex;
   font-size: 40px;
-  justify-content: center;
-  background-color: #C5D2BAE5;
+  justify-content: space-between;  
+  background-color: #87C159;
   padding: 20px;
+  color: #FFFFFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100px;
+}
+.imagenes1 img { 
+  height: 30px;
+}
+.imagenes1 {
+height: 80px;
 }
 
 .contenedor-descuentos {
+  padding: 2rem;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  background-color: #058240;
 }
 
-.contenedor-descuentos h1 {
+.titulo-desc {
+  display: block;
   font-size: 30px;
   text-align: center;
   width: 100%;
-  padding-top: 12px;
+  height: 60px;
+
 }
 
 .contenedor-descuentos img {
-  border-radius: 2%;
+  border-radius: 10px 10px 0px 0px;
   display: block;
 }
 
 .producto {
-  margin: 100px;
+  border-radius: 2rem;
 }
 
 .producto img {
@@ -43,7 +54,40 @@
 }
 
 .descripcion {
-  margin-top: 8px;
   font-size: 30px;
   text-align: center;
+  background-color: #ADCACB;
+  border-radius: 0px 0px 10px 10px;
 }
+
+.contenedor-footer {
+  background-color: #87C159;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.contacto {
+  padding: 1rem;
+  width: 80%;
+  height: 25vh;
+  display: flex;
+  justify-content:space-around;
+  background-color: #f3c301;
+}
+
+.card-contacto{
+  justify-items: center;
+  padding: 1rem;
+  border: dashed 1px #A5B694 ;
+  border-radius: 1rem;
+  color: #000000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Times, serif;
+}
+
+/*
+#058240 
+#ADCACB celeste
+#F3C301 naranja
+*/
