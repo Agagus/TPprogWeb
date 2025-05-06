@@ -27,7 +27,7 @@
 }
 
 .contenedor-descuentos img {
-  border-radius: 2%;
+  border-radius: 6%;
   display: block;
 }
 
@@ -45,4 +45,8 @@
   margin-top: 8px;
   font-size: 30px;
   text-align: center;
+  background-color: greenyellow;
+  border-radius: 3%;
+  padding-bottom: 5px;
+  height: auto;
 }
