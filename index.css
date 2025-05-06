@@ -7,11 +7,26 @@
 .contenedor-header {
   display: flex;
   font-size: 40px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #87c159;
   padding: 20px;
   color: #ffffff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100px;
+}
+
+.contenedor-header h2 {
+  background-color: transparent;
+}
+
+.imagenes1 img {
+  height: 30px;
+}
+.imagenes1 {
+  height: 80px;
+  background-color: transparent;
+  align-content: center;
 }
 
 .contenedor-descuentos {
@@ -20,14 +35,19 @@
   gap: 20px;
   justify-content: space-around;
   background-color: #058240;
+  margin-bottom: 2px;
 }
 
 .titulo-desc {
+  color: #ffffff;
+  margin-top: 2px;
+  background-color: #058240;
   display: block;
   font-size: 30px;
   text-align: center;
   width: 100%;
   height: 60px;
+  align-content: center;
 }
 
 .contenedor-descuentos img {
@@ -37,6 +57,11 @@
 
 .producto {
   border-radius: 2rem;
+}
+
+.producto img:hover {
+  width: 320px;
+  height: 380px;
 }
 
 .producto img {
@@ -50,6 +75,14 @@
   text-align: center;
   background-color: #adcacb;
   border-radius: 0px 0px 10px 10px;
+}
+
+.contenedor-productos {
+  background-color: transparent;
+}
+
+.contenedor-seguridad {
+  background-color: transparent;
 }
 
 .contenedor-footer {
@@ -72,11 +105,12 @@
 .card-contacto {
   justify-items: center;
   padding: 1rem;
-  border: dashed 1px #a5b694;
+  /*border: dashed 1px #A5B694 ;*/
   border-radius: 1rem;
   color: #000000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif Times,
     serif;
+  background-color: transparent;
 }
 
 /*
