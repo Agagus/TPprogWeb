@@ -89,70 +89,12 @@
 .contenedor-productos {
   background-color: transparent;
 }
-
-.contenedor-descuentos:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
+/*seccion de pago, envio y seguridad al cliente  */
 .contenedor-seguridad {
-  background-color: transparent;
-}
-/*Descuentos*/
-
-/*Tajeta "Estaciones del año"*/
-
-.line {
-  width: 90%;
-  margin: auto;
-  height: 2px;
-  background-color: /*#fee3a2*/ white;
-  margin-bottom: 1px;
-}
-
-.contenedor-estaciones {
-  width: 100%;
   height: 60vh;
-  padding: 2rem;
-  display: flex;
-  gap: 15px;
-  justify-content: space-evenly;
-  background-color: #1a3124;
-  margin-bottom: 2px;
-  background-color: #058240;
+  background-color: #ffffff;
 }
 
-.contenedor-estaciones img {
-  width: 300px;
-  height: 250px;
-  border-radius: 10px 10px 0px 0px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s ease;
-}
-
-.prod-estaciones {
-  width: 300px;
-  height: 250px;
-  border-radius: 10px 10px 10px 10px;
-  transition: transform 0.4s ease;
-}
-.prod-estaciones:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.descripcion-est {
-  margin: auto;
-  font-size: 30px;
-  text-align: center;
-  background-color: #adcacb;
-  border-radius: 0px 0px 10px 10px;
-  border-radius: 0px 0px 10px 10px;
-}
-
-/*Tajeta "Estaciones del año"*/
-
-/*Footer*/
 .contenedor-footer {
   background-color: #87c159;
   display: flex;
