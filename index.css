@@ -16,13 +16,15 @@
   height: 100px;
 }
 
-.contenedor-header h2{
+.contenedor-header h2 {
   background-color: transparent;
 }
 
-.imagenes1 img { 
+.imagenes1 img {
   height: 30px;
+  background-color: #87C159;
 }
+
 .imagenes1 {
   height: 80px;
   background-color: transparent;
@@ -78,18 +80,37 @@
 }
 
 
-.contenedor-productos{
+.contenedor-productos {
   background-color: transparent;
 }
- /*seccion de pago, envio y seguridad al cliente  */
-.contenedor-seguridad{ 
 
-height: 60vh;
-background-color: #FFFFFF;
+/*seccion de pago, envio y seguridad al cliente  */
 
+
+.contenedor-seguridad {
+  height: 10vh;
+  background-color: #ADCACB;
+  width: 100%;
+  display: flex;
+  gap: 160px;
+  padding-left: 20%;
 
 }
 
+.contenedor-seguridad p {
+  background-color: #ADCACB;
+}
+
+.contenedor-seguridad img {
+  justify-content: space-evenly;
+  width: 30px;
+  height: 30px;
+  background-color: #ADCACB;
+}
+
+.iconos-T {
+  background-color: #ADCACB;
+}
 
 .contenedor-footer {
   background-color: #87C159;
@@ -104,17 +125,17 @@ background-color: #FFFFFF;
   width: 80%;
   height: 25vh;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   background-color: #f3c301;
 }
 
-.card-contacto{
+.card-contacto {
   justify-items: center;
   padding: 1rem;
   /*border: dashed 1px #A5B694 ;*/
   border-radius: 1rem;
   color: #000000;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Times, serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Times, serif;
   background-color: transparent;
 }
 
