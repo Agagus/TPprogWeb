@@ -81,10 +81,15 @@
 .contenedor-productos{
   background-color: transparent;
 }
+ /*seccion de pago, envio y seguridad al cliente  */
+.contenedor-seguridad{ 
 
-.contenedor-seguridad{
-  background-color: transparent;
+height: 60vh;
+background-color: #FFFFFF;
+
+
 }
+
 
 .contenedor-footer {
   background-color: #87C159;
