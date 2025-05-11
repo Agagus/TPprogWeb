@@ -2,6 +2,7 @@
   background-color: #fee3a2;
   margin: 0;
   box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 /*Header*/
 .contenedor-header {
@@ -107,7 +108,6 @@
 }
 
 .contenedor-productos {
-  padding-top: 50px;
   padding-bottom: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -170,31 +170,31 @@
 
 /*seccion de pago, envio y seguridad al cliente  */
 .contenedor-seguridad {
-  height: 60vh;
-  gap: 20px;
+  padding-top: 20%;
+  display: flex;
+  padding-top: 50px;
+  height: 50vh;
+  gap: 50px;
   background-color: #adcacb;
   width: 100%;
   display: flex;
-}
-
-.contenedor-seguridad img {
-  text-align: center;
-  width: 40px;
-  height: 30px;
-  color: #adcacb;
-  align-items: center;
+  background-color: #adcacb;
+  justify-content: center;
 }
 
 .contenedor-seguridad p {
   background-color: #adcacb;
-  width: 100%;
   text-align: center;
 }
-
-.iconos-camion {
+.iconos {
+  background-color: #adcacb;
+}
+.iconos img {
   justify-content: center;
-} /*seccion de pago, envio y seguridad al cliente  */
-
+  height: 40px;
+  padding-top: 5px;
+  background-color: #adcacb;
+}
 /* -----------------------------------------*/
 
 .contenedor-footer {
@@ -215,6 +215,7 @@
 }
 
 .card-contacto {
+  text-decoration: none;
   justify-items: center;
   padding: 1rem;
   /*border: dashed 1px #A5B694 ;*/
@@ -224,6 +225,7 @@
     serif;
   background-color: transparent;
 }
+
 /*Header*/
 
 /*
