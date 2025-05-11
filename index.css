@@ -1,46 +1,47 @@
 * {
-  background-color: #FEE3A2;
+  background-color: #fee3a2;
   margin: 0;
   box-sizing: border-box;
 }
-
+/*Header*/
 .contenedor-header {
   display: flex;
   font-size: 40px;
   justify-content: space-between;
   align-items: center;
-  background-color: #87C159;
+  background-color: #87c159;
   padding: 20px;
-  color: #FFFFFF;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   height: 100px;
 }
 
-.contenedor-header h2{
+.contenedor-header h2 {
   background-color: transparent;
-
 }
 
-.imagenes1 img { 
+.imagenes1 img {
   height: 30px;
+  background-color: #87c159;
 }
 .imagenes1 {
   height: 80px;
-  background-color: transparent;
+  background-color: #87c159;
   align-content: center;
 }
+/*Header*/
 
+/*Descuentos*/
 .contenedor-descuentos {
   padding: 2rem;
   display: flex;
   gap: 20px;
   justify-content: space-around;
   background-color: #058240;
-  margin-bottom: 2px;
 }
 
 .titulo-desc {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 2px;
   background-color: #058240;
   display: block;
@@ -58,11 +59,12 @@
 
 .producto {
   border-radius: 2rem;
+  transition: transform 0.4s ease;
 }
 
-.producto img:hover {
-  width: 320px;
-  height: 380px;
+.producto:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .producto img {
@@ -72,23 +74,131 @@
 }
 
 .descripcion {
+  height: auto;
   font-size: 30px;
   text-align: center;
-  background-color: #ADCACB;
+  background-color: #adcacb;
   border-radius: 0px 0px 10px 10px;
+} /*Descuentos*/
+
+/*Tajeta zapatos*/
+.line {
+  width: 90%;
+  margin: auto;
+  height: 2px;
+  background-color: /*#fee3a2*/ white;
+  margin-bottom: 1px;
 }
 
-
-.contenedor-productos{
-  background-color: transparent;
+.nuestros-productos {
+  color: #ffffff;
+  margin-top: 2px;
+  background-color: #058240;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  align-content: center;
 }
 
-.contenedor-seguridad{
-  background-color: transparent;
+.nuestros-productos p {
+  background-color: #058240;
 }
+
+.contenedor-productos {
+  padding-top: 50px;
+  padding-bottom: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80vh;
+  gap: 30px;
+  justify-content: first-baseline;
+  background-color: #058240;
+  padding-left: 40px;
+}
+
+.contenedor-productos h2 {
+  font-size: 40px;
+  height: 40px;
+  text-align: center;
+  padding-bottom: 20%;
+  width: 50px;
+}
+.contenedor-productos img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  display: block;
+}
+
+.card-productos {
+  border-radius: 10px 10px 10px 10px;
+  transition: transform 0.4s ease;
+}
+
+.card-productos:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-descripcion {
+  padding: auto;
+  font-size: 30px;
+  text-align: center;
+  background-color: #adcacb;
+}
+
+.card-productos span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #adcacb;
+}
+
+.card-productos span.precio {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/*Tarjeta zapatos*/
+
+/*seccion de pago, envio y seguridad al cliente  */
+.contenedor-seguridad {
+  height: 60vh;
+  gap: 20px;
+  background-color: #adcacb;
+  width: 100%;
+  display: flex;
+}
+
+.contenedor-seguridad img {
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  color: #adcacb;
+  align-items: center;
+}
+
+.contenedor-seguridad p {
+  background-color: #adcacb;
+  width: 100%;
+  text-align: center;
+}
+
+.iconos-camion {
+  justify-content: center;
+} /*seccion de pago, envio y seguridad al cliente  */
+
+/* -----------------------------------------*/
 
 .contenedor-footer {
-  background-color: #87C159;
+  background-color: #87c159;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,19 +210,21 @@
   width: 80%;
   height: 25vh;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   background-color: #f3c301;
 }
 
-.card-contacto{
+.card-contacto {
   justify-items: center;
   padding: 1rem;
   /*border: dashed 1px #A5B694 ;*/
   border-radius: 1rem;
   color: #000000;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Times, serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif Times,
+    serif;
   background-color: transparent;
 }
+/*Header*/
 
 /*
 #058240 
