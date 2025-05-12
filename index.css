@@ -2,6 +2,7 @@
   background-color: #fee3a2;
   margin: 0;
   box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 /*Header*/
 .contenedor-header {
@@ -215,14 +216,13 @@
 }
 
 .card-contacto {
+  background-color: #f3c301;
   justify-items: center;
   padding: 1rem;
-  /*border: dashed 1px #A5B694 ;*/
   border-radius: 1rem;
   color: #000000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif Times,
     serif;
-  background-color: transparent;
 }
 /*Header*/
 
