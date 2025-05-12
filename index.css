@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 /*Header*/
 .contenedor-header {
@@ -39,8 +40,8 @@
   font-size: 20px;
 
 }
-i{
-  color: black;
+.iconosLi i{
+  color: #ffffff;
 }
 
 /*Header*/
@@ -257,7 +258,11 @@ i{
 .inputEnviar{
   outline: none;
 }
+.card-contacto h4 {
 
+  text-align: center;
+  padding-bottom: 10px;
+}
 /*
 #058240 
 #ADCACB celeste
