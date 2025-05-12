@@ -1,5 +1,4 @@
 * {
-  background-color: #fee3a2;
   margin: 0;
   box-sizing: border-box;
 }
@@ -20,15 +19,30 @@
   background-color: transparent;
 }
 
-.imagenes1 img {
-  height: 30px;
-  background-color: #87c159;
+.titulPrincipal{
+  margin-left: 110px;
 }
-.imagenes1 {
+
+.iconos {
+  width: 150px;
   height: 80px;
-  background-color: #87c159;
   align-content: center;
 }
+.iconosUl{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-around;
+
+}
+.iconosLi{
+  font-size: 20px;
+
+}
+i{
+  color: black;
+}
+
 /*Header*/
 
 /*Descuentos*/
@@ -175,25 +189,37 @@
   background-color: #adcacb;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
 }
 
-.contenedor-seguridad img {
-  text-align: center;
-  width: 40px;
-  height: 30px;
-  color: #adcacb;
-  align-items: center;
-}
 
 .contenedor-seguridad p {
   background-color: #adcacb;
   width: 100%;
-  text-align: center;
 }
 
 .iconos-camion {
   justify-content: center;
-} /*seccion de pago, envio y seguridad al cliente  */
+  height: 200px;
+  text-align: center;
+} 
+.iconoCamion{
+  font-size: 40px;
+  text-align: center;
+}
+.enviosTxt{
+  font-weight: bold;
+  margin: 10px;
+  font-size: 30px;
+}
+.txtpais{
+  font-size: 20px;
+}
+
+/*seccion de pago, envio y seguridad al cliente  */
 
 /* -----------------------------------------*/
 
@@ -224,7 +250,13 @@
     serif;
   background-color: transparent;
 }
-/*Header*/
+.btnEnviar{
+  cursor: pointer;
+
+}
+.inputEnviar{
+  outline: none;
+}
 
 /*
 #058240 
