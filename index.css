@@ -4,12 +4,110 @@
   --color-principal: #b3c2a7;
   --color-secundario: #99ada2;
   --color-terciario: #d2eadd;
+  --color-oscuro:rgba(11, 11, 11, 0.728);
+  --color-oscuro2:rgba(81, 76, 76, 0.728);
 }
+
 
 body {
   margin: 0;
   background-color: var(--color-principal);
+  transition: 0.4s;
 }
+
+
+
+/*Modo oscuro*/
+#dark-light-mode {
+  width: 30px;
+ 
+}
+#switch {
+  width: 70%;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: solid 1px
+  
+}
+
+
+.dark 
+{
+
+  background-color: var(--color-oscuro);
+  
+}
+
+.dark
+.contenedor-header {
+
+  background-color: var(--color-oscuro);
+}
+
+
+
+.dark 
+.nuestros-productos {
+  background-color: var(--color-oscuro2);
+}
+
+.dark 
+.card-productos {
+
+  background-color: var(--color-oscuro);
+}
+
+.dark
+.contenedor-productos{
+background-color: var(--color-oscuro);
+color: #f0f0f0;
+transition: 0.4s;
+
+
+}
+
+.dark 
+.contenedor-descuentos {
+background-color: var(--color-oscuro);
+color: #f0f0f0;
+transition: 0.4s;
+
+}
+
+.dark 
+.descripcion {
+
+  background-color: var(--color-oscuro);
+}
+
+.dark
+.contenedor-seguridad {
+color: var(--color-principal);
+color: #f0f0f0;
+
+}
+
+.dark 
+.contenedor-footer {
+
+  background-color: var(--color-oscuro);
+  -webkit-text-fill-color:#f0f0f0 ;
+
+}
+
+.dark
+.contenedor-grupo p ,a {
+  color: #f0f0f0;
+  
+}
+
+
+
+.contenedor-dl-mode {
+margin-left: 90%;
+}
+
+
 /*---------Header--------*/
 .contenedor-header {
   display: flex;
@@ -345,6 +443,7 @@ body {
 
 .contenedor-grupo a {
   text-decoration: none;
+  color: var(--color-oscuro);
 
 }
 /*

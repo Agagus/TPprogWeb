@@ -4,7 +4,28 @@
 
 
 
+const btn = document.getElementById("switch")
+const darkmode = document.getElementById("dark-light-mode")
 
+
+btn.addEventListener("click",()=> {
+  document.body.classList.toggle("dark") //aca si cliqueas cambia la clase a dark (modo oscuro).
+
+ if (document.body.classList.contains("dark")) { // aca si ya contiene la clase dark,cambia el texto y el icono despues de haber hecho click.
+  btn.textContent="Modo claro";
+  darkmode.src="iconos/sol.png"
+ }
+else { //aca si ya esta en oscuro cambias a claro denuevo.
+  btn.textContent="Modo oscuro"
+  darkmode.src ="iconos/luna.png"
+}
+
+
+
+console.log("dasdasda");
+
+
+})
 
 
 
