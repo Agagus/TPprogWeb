@@ -1,29 +1,36 @@
 //----------------------Formulario--------------
-  function validarEmail(email) {
-    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return regex.test(email);
-  }
-
   function cargaForm() {
-    const email = document.getElementById("mail").value;
-    const consulta = document.getElementById("consulta").value;
+    const mail = document.getElementById('mail').value.trim();
+    const consulta = document.getElementById('consulta').value.trim();
 
-    if (!validarEmail(email)) {
-      alert("Por favor, ingresá un email válido.");
-      return false; 
-    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (consulta.trim() === "") {
-      alert("Campo consulta incompleto");
+    // Validar email
+    if (!emailRegex.test(mail)) {
+      alert("Ingresá un mail válido.");
       return false;
     }
 
-    alert("Formulario enviado correctamente.\nEmail: " + email + "\nConsulta: " + consulta);
-    return true; 
+    // Validar consulta
+    if (consulta.length <10) {
+      alert("Por favor escribí una consulta de al menos 10 caracteres.");
+      return false;
+    }
+
+    alert("Formulario enviado correctamente.");
+    return true; // Permite el envío
   }
 
 
 
+
+const btn = document.getElementById("switch")
+const darkmode = document.getElementById("dark-light-mode")
+
+
+btn.addEventListener("click",()=> {
+  document.body.classList.toggle("dark") //aca si cliqueas cambia la clase a dark (modo oscuro).
+})
 
 
 
@@ -76,3 +83,10 @@ const aparecerImagen = (imagen) => {
   imagenesLight.classList.toggle("mostrarImagen");
  
 };
+
+
+
+
+
+
+
