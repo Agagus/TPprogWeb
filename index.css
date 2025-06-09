@@ -1,3 +1,7 @@
+
+
+
+
 * {
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
@@ -17,23 +21,93 @@ body {
 
 
 
+.contenedorModoOscuro {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contenedorModoOscuro:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.icono {
+  position: absolute;
+  font-size: 24px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* día */
+
+body:not(.dark) .icono-sol {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+body:not(.dark) .icono-luna {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Hover en día: ocultar sol*/
+body:not(.dark) .contenedorModoOscuro:hover .icono-sol {
+  opacity: 0;
+}
+
+body:not(.dark) .contenedorModoOscuro:hover .icono-luna {
+  opacity: 1;
+}
+
+
+/*  noche */
+body.dark .icono-sol {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+body.dark .icono-luna {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+/* Hover en noche: ocultar luna*/
+body.dark .contenedorModoOscuro:hover .icono-luna {
+  opacity: 0;
+}
+
+body.dark .contenedorModoOscuro:hover .icono-sol {
+  opacity: 1;
+}
+
+
+
+
+
+
+
 /*Modo oscuro*/
+
 #dark-light-mode {
   width: 30px;
  
 }
-#switch {
-  width: 70%;
-  font-weight: bolder;
-  border-radius: 10px;
-  border: solid 1px
-  
-}
-
 
 .dark 
 {
-
   background-color: var(--color-oscuro);
   
 }
@@ -91,7 +165,7 @@ color: #f0f0f0;
 .contenedor-footer {
 
   background-color: var(--color-oscuro);
-  -webkit-text-fill-color:#f0f0f0;
+  -webkit-text-fill-color:#f0f0f0 ;
 
 }
 
@@ -506,5 +580,16 @@ margin-left: 90%;
     text-align: center;
     border-bottom: solid 1px grey;
     padding-bottom: 1rem;
+  }
+.dark
+.Secciones{
+  color: #f0f0f0 
+
+    }
+}
+@media (min-width: 769px) {
+
+  .menu-desp p {
+    display: none;
   }
 }

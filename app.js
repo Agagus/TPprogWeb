@@ -1,5 +1,25 @@
 //----------------------Formulario--------------
+  function cargaForm() {
+    const mail = document.getElementById('mail').value.trim();
+    const consulta = document.getElementById('consulta').value.trim();
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Validar email
+    if (!emailRegex.test(mail)) {
+      alert("Ingresá un mail válido.");
+      return false;
+    }
+
+    // Validar consulta
+    if (consulta.length <10) {
+      alert("Por favor escribí una consulta de al menos 10 caracteres.");
+      return false;
+    }
+
+    alert("Formulario enviado correctamente.");
+    return true; // Permite el envío
+  }
 
 
 
@@ -10,26 +30,7 @@ const darkmode = document.getElementById("dark-light-mode")
 
 btn.addEventListener("click",()=> {
   document.body.classList.toggle("dark") //aca si cliqueas cambia la clase a dark (modo oscuro).
-
- if (document.body.classList.contains("dark")) { // aca si ya contiene la clase dark,cambia el texto y el icono despues de haber hecho click.
-  btn.textContent="Modo claro";
-  darkmode.src="iconos/sol.png"
- }
-else { //aca si ya esta en oscuro cambias a claro denuevo.
-  btn.textContent="Modo oscuro"
-  darkmode.src ="iconos/luna.png"
-}
-
-
-
-console.log("dasdasda");
-
-
 })
-
-
-
-
 
 
 //----------------------MENU DESPLEGABLE--------------
@@ -78,3 +79,10 @@ const aparecerImagen = (imagen) => {
   imagenesLight.classList.toggle("mostrarImagen");
  
 };
+
+
+
+
+
+
+

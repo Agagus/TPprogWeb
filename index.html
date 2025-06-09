@@ -14,10 +14,12 @@
 </head>
 
 <body>
-  <div class="contenedor-dl-mode">
-    <img src="iconos/luna.png" alt="" id="dark-light-mode">
-    <button id="switch">Modo oscuro</button>
+
+  <div id="switch" class="contenedorModoOscuro">
+    <i class="icono icono-sol fa-solid fa-sun"></i>
+    <i class="icono icono-luna fa-solid fa-moon"></i>
   </div>
+
   <!--Seccion header-->
   <header class="contenedor-header">
     <h2><a href="/productos.html">Z</a></h2>
@@ -40,10 +42,10 @@
 
   </header>
   <div class="menu-desp" id="menu-desp">
-    <p>Buscar</p>
-    <p>Mis favoritos</p>
-    <p>Iniciar sesión</p>
-    <p>Mi carrito</p>
+    <p class="Secciones">Buscar</p>
+    <p class="Secciones">Mis favoritos</p>
+    <p class="Secciones">Iniciar sesión</p>
+    <p class="Secciones">Mi carrito</p>
   </div>
   <!--Seccion header-->
 
@@ -144,7 +146,6 @@
 
 
   <section class="imagen-light">
-    <img src="iconos/close.svg" alt="" class="close">
     <img src="" alt="" class="agregar-imagen">
   </section>
   <!--tarjeta zapatos -->
@@ -204,10 +205,11 @@
       </div>
       <div class="card-contacto">
         <h4>Envianos tu consulta</h4>
-        <form class="formulario">
-          <input class="inputMail" name="mail" type="email" value="" placeholder="Ingresá tu mail..">
-          <input class="inputEnviar" name="consulta" type="text" value="" placeholder="Tu consulta aqui..">
-          <button class="btnEnviar" onclick=cargaForm(mail,consulta)>ENVIAR</button><!--Seccion footer-->
+        <form class="formulario" onsubmit="return cargaForm()">
+          <input class="inputMail" id="mail" name="mail" type="email" value="" required="Ingresá tu mail..">
+          <textarea class="inputEnviar" name="" id="consulta" required></textarea>
+          <button type="submit" class="btnEnviar">ENVIAR</button>
+
         </form>
       </div>
     </div>
