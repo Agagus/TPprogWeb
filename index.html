@@ -200,11 +200,11 @@
       </div>
       <div class="card-contacto">
         <h4>Envianos tu consulta</h4>
-        <form class="formulario">
-          <input class="inputMail" name="mail" type="email" value="" placeholder="Ingresá tu mail..">
-          <input class="inputEnviar" name="consulta" type="text" value="" placeholder="Tu consulta aqui..">
-          <button class="btnEnviar" onclick=cargaForm(mail,consulta)>ENVIAR</button><!--Seccion footer-->
-        </form>
+        <form class="formulario" onsubmit="return cargaForm()">
+  <input class="inputMail" id="mail" name="mail" type="email" placeholder="Ingresá tu mail..">
+  <textarea class="inputEnviar" id="consulta" name="" id=""></textarea>
+  <button type="submit" class="btnEnviar">ENVIAR</button>
+</form>
       </div>
     </div>
   </div>

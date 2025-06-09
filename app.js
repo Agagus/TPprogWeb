@@ -1,7 +1,26 @@
 //----------------------Formulario--------------
+  function validarEmail(email) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  }
 
+  function cargaForm() {
+    const email = document.getElementById("mail").value;
+    const consulta = document.getElementById("consulta").value;
 
+    if (!validarEmail(email)) {
+      alert("Por favor, ingresá un email válido.");
+      return false; 
+    }
 
+    if (consulta.trim() === "") {
+      alert("Campo consulta incompleto");
+      return false;
+    }
+
+    alert("Formulario enviado correctamente.\nEmail: " + email + "\nConsulta: " + consulta);
+    return true; 
+  }
 
 
 
