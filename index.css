@@ -1,24 +1,490 @@
+* {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  --color-principal: #b3c2a7;
+  --color-secundario: #99ada2;
+  --color-terciario: #d2eadd;
+}
 
-.contenedorAll{
-  width: 100%;
-  height: 100%;
+body {
+  margin: 0;
+  background-color: var(--color-principal);
+}
+ body.modo-oscuro {
+      background-color: #121212;
+      color: white;
+  }
+/*---------Header--------*/
+.contenedor-header {
+  display: flex;
+  font-size: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100px;
+  background-color: var(--color-secundario);
+}
+
+.contenedor-header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.titulPrincipal{
+  margin-left: 110px;
+}
+
+.iconos {
+  width: 150px;
+  height: 80px;
+  align-content: center;
+}
+.iconosUl{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-around;
 
 }
-.contenedorBtn{
+.iconosLi{
+  font-size: 20px;
+
+}
+.iconosLi i{
+  color: #ffffff;
+}
+
+/*----------FIN - Header----------*/
+
+/*----------Descuentos------------*/
+.contenedor-descuentos {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: first-baseline;
+  gap: 20px;
+  justify-content: space-around;
+  background-color: var(--color-terciario);
+}
+
+.titulo-desc {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.producto {
+  border-radius: 2rem;
+  transition: transform 0.4s ease;
+  height: auto;
+}
+
+.producto:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.producto img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 350px;
+  border-radius: 10px 10px 0px 0px;
+  display: block;
+}
+
+.descripcion {
+  margin-top: 0;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #adcacb;
+  border-radius: 0px 0px 10px 10px;
+} /*---------FIN Descuentos----------*/
+
+/*----------Tarjeta zapatos---------*/
+.line {
+  width: 90%;
+  margin: auto;
+  height: 2px;
+  background-color: /*#fee3a2*/ white;
+  margin-bottom: 1px;
+}
+
+
+.imagen-light {
+  position: fixed;
+  background: rgba(2, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  /*transition: transform 0.2s ease-in-out;   /* 1 :primero pasa esta*/
+}
+
+.show {
+  transform: translate(0);
+}
+
+.agregar-imagen {
+  
+  object-fit: cover;
+  height: 100%;
+  width: 600px;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: transform 0.2s 0.2s;
+
+}
+
+.mostrarImagen {
+  transform: scale(0.8);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  cursor: pointer;
+  color: #fff;
+  
+}
+
+
+/*---------------------------------*/
+
+
+
+
+
+.nuestros-productos {
+  color: #ffffff;
+  margin-top: 2px;
+  background-color: var(--color-secundario);
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  align-content: center;
+}
+
+
+.contenedor-productos {
+  padding-top: 50px;
+  /*padding-bottom: 50%;*/
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 30px;
+  justify-content: first-baseline;
+  background-color: var(--color-terciario);
+  padding-left: 40px;
+}
+
+.contenedor-productos h2 {
+  font-size: 40px;
+  height: 40px;
+  text-align: center;
+  padding-bottom: 20%;
+  width: 50px;
+}
+.contenedor-productos img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  display: block;
+}
+
+.card-productos {
+  border-radius: 10px 10px 10px 10px;
+  transition: transform 0.4s ease;
+  background-color: var(--color-principal);
+}
+
+.card-productos:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-descripcion {
+  padding: 5px;
+  font-size: 30px;
   text-align: center;
 }
 
-.btn{
-  width: 180px;
-  height: 50px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  border: 1px solid rgb(72, 72, 72);
+.card-productos span {
+  padding: 3px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
 }
-.btn:hover{
-  background-color: black;
-  color: white;
-  transition:  0.7s ;
+
+.card-productos span.precio {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/*----------FIN Tarjeta zapatos---------*/
+
+/*seccion de pago, envio y seguridad al cliente  */
+.contenedor-seguridad {
+  min-height: 60vh;
+  gap: 20px;
+  /*background-color: #adcacb; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contenedor-seguridad p {
+  /*background-color: #adcacb;*/
+  width: 90%;
+}
+
+.iconos-camion {
+  justify-content: center;
+  text-align: center;
+} 
+.iconoCamion{
+  font-size: 40px;
+  text-align: center;
+}
+.enviosTxt{
+  font-weight: bold;
+  margin: 10px;
+  font-size: 30px;
+}
+.txtpais{
+  font-size: 20px;
+}
+
+/*seccion de pago, envio y seguridad al cliente  */
+
+/* -----------------------------------------*/
+
+.contenedor-footer {
+  background-color: var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.contacto {
+  padding: 1rem;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;*/
+  border-radius: 1rem;
+}
+
+.card-contacto {
+  width: 90%;
+  justify-content: center;
+  padding: .5rem;
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif Times,
+    serif;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+.btnEnviar{
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--color-secundario);
+  border: solid 1px black;
+  border-radius: 0.5rem;
+  padding: 8px;
+}
+.inputEnviar{
+  padding: 8px;
+  background-color: var(--color-secundario);
+  border: solid 1.5px black;
+}
+.inputMail{
+  padding: 8px;
+  background-color: var(--color-secundario);
+  border: solid 1.5px black;
+}
+.card-contacto h4 {
+
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contenedor-grupo {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.contenedor-grupo a {
+  text-decoration: none;
+
+}
+/*
+#058240 
+#ADCACB celeste
+#F3C301 naranja
+*/
+
+.menu {
+  display:none;
+}
+
+.menu-desp {
+  display: none;
+}
+/*Estiños modo oscuro*/
+
+.contenedorModoOscuro {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contenedorModoOscuro:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.icono {
+  position: absolute;
+  font-size: 24px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* día */
+
+body:not(.modo-oscuro) .icono-sol {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+body:not(.modo-oscuro) .icono-luna {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Hover en día: ocultar sol*/
+body:not(.modo-oscuro) .contenedorModoOscuro:hover .icono-sol {
+  opacity: 0;
+}
+
+body:not(.modo-oscuro) .contenedorModoOscuro:hover .icono-luna {
+  opacity: 1;
+}
+
+
+/*  noche */
+body.modo-oscuro .icono-sol {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+body.modo-oscuro .icono-luna {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+/* Hover en noche: ocultar luna*/
+body.modo-oscuro .contenedorModoOscuro:hover .icono-luna {
+  opacity: 0;
+}
+
+body.modo-oscuro .contenedorModoOscuro:hover .icono-sol {
+  opacity: 1;
+}
+
+
+
+
+@media (max-width: 768px){
+  .iconos {
+    display: none;
+  }
+
+  .menu{
+    display:block;
+    width: 150px;
+    height: 80px;
+    align-content: center;
+  }
+
+  .menu-desp{
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-desp p {
+    cursor: pointer;
+    padding: 2px;
+  }
+
+
+/*seccion seguridad*/
+  .contenedor-seguridad{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+
+/*seccion contacto*/
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-contacto{
+    text-align: center;
+    border-bottom: solid 1px grey;
+    padding-bottom: 1rem;
+  }
 }

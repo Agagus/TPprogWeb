@@ -1,24 +1,83 @@
-const btn = document.querySelector(".btn");
-const body = document.body;
-const txt=document.querySelector(".lorem")
+//----------------------Formulario--------------
+  function validarEmail(email) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  }
 
+  function cargaForm() {
+    const email = document.getElementById("mail").value;
+    const consulta = document.getElementById("consulta").value;
 
-
-btn.addEventListener("click", () => {
-    const modoNocturno = body.classList.toggle("modo-modoNocturno");
-
-    if (modoNocturno) {
-        btn.textContent = "Cambiar a modo claro";
-        btn.classList.add("modoNocturno");
-        body.style.background="#000"
-        txt.style.color="#fff"
-
-    } else {
-        btn.textContent = "Cambiar a modo oscuro";
-        btn.classList.remove("modoNocturno");
-        body.style.background="#fff"
-        txt.style.color="#000"
-
-
+    if (!validarEmail(email)) {
+      alert("Por favor, ingresá un email válido.");
+      return false; 
     }
+
+    if (consulta.trim() === "") {
+      alert("Campo consulta incompleto");
+      return false;
+    }
+
+    alert("Formulario enviado correctamente.\nEmail: " + email + "\nConsulta: " + consulta);
+    return true; 
+  }
+
+  const botonModo = document.getElementById('botonModo');
+
+    botonModo.addEventListener('click', () => {
+      document.body.classList.toggle('modo-oscuro');
+    });
+
+
+
+
+
+
+
+
+//----------------------MENU DESPLEGABLE--------------
+
+let menu = document.getElementById("menu");
+let menuDesp = document.getElementById("menu-desp");
+let bool = true;
+
+menu.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (bool) {
+    menuDesp.style.display = "flex";
+    menuDesp.style.transition = "transform";
+    menuDesp.style.transitionDuration = "0.6s";
+    bool = false;
+  } else {
+    menuDesp.style.display = "none";
+    bool = true;
+  }
 });
+
+
+////----------------------Agrandar imagenes de la galeria--------------
+const imagenes = document.querySelectorAll(".img-producto");
+const imagenesLight = document.querySelector(".agregar-imagen");
+const contenedorLight = document.querySelector(".imagen-light");
+
+
+imagenes.forEach((imagen) => {
+  imagen.addEventListener("click", () => {
+    aparecerImagen(imagen.getAttribute("src"));
+  });
+});
+
+contenedorLight.addEventListener("click", (e) => {
+  if (e.target != imagenesLight) {
+    contenedorLight.classList.toggle("show");
+    imagenesLight.classList.toggle("mostrarImagen");
+   
+  }
+});
+
+const aparecerImagen = (imagen) => {
+  imagenesLight.src = imagen;
+  contenedorLight.classList.toggle("show");
+  imagenesLight.classList.toggle("mostrarImagen");
+ 
+};
