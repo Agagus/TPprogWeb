@@ -2,9 +2,6 @@
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -153,7 +150,6 @@
 
 
   <section class="imagen-light">
-    <img src="iconos/close.svg" alt="" class="close">
     <img src="" alt="" class="agregar-imagen">
   </section>
   <!--tarjeta zapatos -->
@@ -213,10 +209,11 @@
       </div>
       <div class="card-contacto">
         <h4>Envianos tu consulta</h4>
-        <form class="formulario">
-          <input class="inputMail" name="mail" type="email" value="" placeholder="Ingresá tu mail..">
-          <textarea class="inputEnviar" name="" id=""></textarea>
-          <button class="btnEnviar" onclick=cargaForm(mail,consulta)>ENVIAR</button><!--Seccion footer-->
+        <form class="formulario"  onsubmit="return cargaForm()">
+          <input class="inputMail" id="mail" name="mail" type="email" value=""  required="Ingresá tu mail..">
+          <textarea class="inputEnviar" name="" id="consulta" required></textarea>
+          <button type="submit" class="btnEnviar">ENVIAR</button>
+
         </form>
       </div>
     </div>
@@ -235,9 +232,5 @@
 </body>
 
 </html>
-
-
-
-
 
 

@@ -587,3 +587,9 @@ margin-left: 90%;
 
     }
 }
+@media (min-width: 769px) {
+
+  .menu-desp p {
+    display: none;
+  }
+}
