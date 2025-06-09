@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +21,12 @@
 </head>
 
 <body>
+  
+  <div id="switch" class="contenedorModoOscuro" >
+    <i class="icono icono-sol fa-solid fa-sun"></i>
+    <i class="icono icono-luna fa-solid fa-moon"></i>
+  </div>
+
   <!--Seccion header-->
   <header class="contenedor-header">
     <h2><a href="/productos.html">Z</a></h2>
@@ -36,10 +49,10 @@
 
   </header>
   <div class="menu-desp" id="menu-desp">
-    <p>Buscar</p>
-    <p>Mis favoritos</p>
-    <p>Iniciar sesión</p>
-    <p>Mi carrito</p>
+    <p class="Secciones">Buscar</p>
+    <p class="Secciones">Mis favoritos</p>
+    <p class="Secciones">Iniciar sesión</p>
+    <p class="Secciones">Mi carrito</p>
   </div>
   <!--Seccion header-->
 
@@ -200,11 +213,11 @@
       </div>
       <div class="card-contacto">
         <h4>Envianos tu consulta</h4>
-        <form class="formulario" onsubmit="return cargaForm()">
-  <input class="inputMail" id="mail" name="mail" type="email" placeholder="Ingresá tu mail..">
-  <textarea class="inputEnviar" id="consulta" name="" id=""></textarea>
-  <button type="submit" class="btnEnviar">ENVIAR</button>
-</form>
+        <form class="formulario">
+          <input class="inputMail" name="mail" type="email" value="" placeholder="Ingresá tu mail..">
+          <textarea class="inputEnviar" name="" id=""></textarea>
+          <button class="btnEnviar" onclick=cargaForm(mail,consulta)>ENVIAR</button><!--Seccion footer-->
+        </form>
       </div>
     </div>
   </div>
@@ -218,14 +231,13 @@
   </div>
 
 
-
-
-  <div class="contenedorModoOscuro" id="botonModo" >
-    <i class="icono icono-sol fa-solid fa-sun"></i>
-    <i class="icono icono-luna fa-solid fa-moon"></i>
-  </div>
-
   <script src="index.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
