@@ -357,7 +357,7 @@ margin-left: 90%;
   width: 100%;
   height: auto;
   gap: 30px;
-  justify-content: first-baseline;
+  justify-content: center;
   background-color: var(--color-terciario);
   padding-left: 40px;
 }

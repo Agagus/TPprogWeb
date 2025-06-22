@@ -65,8 +65,7 @@ menu.addEventListener("click", (e) => {
   e.preventDefault();
   if (bool) {
     menuDesp.style.display = "flex";
-    menuDesp.style.transition = "transform";
-    menuDesp.style.transitionDuration = "0.6s";
+    menuDesp.style.transition;
     bool = false;
   } else {
     menuDesp.style.display = "none";
