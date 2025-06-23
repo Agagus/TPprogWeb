@@ -15,21 +15,19 @@
 </head>
 
 <body>
-  
-  <div id="switch" class="contenedorModoOscuro" >
-    <i class="icono icono-sol fa-solid fa-sun"></i>
-    <i class="icono icono-luna fa-solid fa-moon"></i>
+  <div class="contenedor-dl-mode">
+    <img src="iconos/luna.png" alt="" id="dark-light-mode">
+    <button id="switch">Modo oscuro</button>
   </div>
-
   <!--Seccion header-->
   <header class="contenedor-header">
-    <h2><a href="/productos.html">Z</a></h2>
+    <h2><a href="/index.html">Z</a></h2>
     <h2 class="titulPrincipal">LIMON</h2>
     <div class="iconos">
       <ul class="iconosUl">
         <li class="iconosLi"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         <li class="iconosLi"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-        <li class="iconosLi"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        <li class="iconosLi"><a href="/productos.html"><i class="fa-solid fa-user"></i></a></li>
         <li class="iconosLi"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </div>
@@ -207,8 +205,8 @@
       <div class="card-contacto">
         <h4>Envianos tu consulta</h4>
         <form class="formulario"  onsubmit="return cargaForm()">
-          <input class="inputMail" id="mail" name="mail" type="email" value=""  required="Ingresá tu mail..">
-          <textarea class="inputEnviar" name="" id="consulta" required></textarea>
+          <input class="inputMail" id="mail" name="mail" type="email" value="" placeholder="Ingresá tu mail" required="Ingresá tu mail..">
+          <textarea class="inputEnviar" name="" id="consulta" placeholder="Tu consulta..." required></textarea>
           <button type="submit" class="btnEnviar">ENVIAR</button>
 
         </form>

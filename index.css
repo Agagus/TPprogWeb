@@ -484,6 +484,7 @@ margin-left: 90%;
   display: flex;
   flex-direction: column;
   row-gap: .5rem;
+  color:#000000;
 }
 .btnEnviar{
   cursor: pointer;
@@ -592,4 +593,17 @@ margin-left: 90%;
   .menu-desp p {
     display: none;
   }
+}
+
+
+
+
+/*-----------------------------------------------------*/
+
+.contenedor-gral {
+  margin: 2rem;
+}
+
+#contenedor-cons {
+  color: var(--color-oscuro);
 }

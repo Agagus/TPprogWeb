@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>LIMON</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>ACA IRA UNA PAGINA EN LA QUE SE MOSTRARAN TODOS LOS PRODUCTOS</h1>
+    <div class="contenedor-dl-mode">
+        <img src="iconos/luna.png" alt="" id="dark-light-mode">
+        <button id="switch">Modo oscuro</button>
+      </div>
+      <!--Seccion header-->
+      <header class="contenedor-header">
+        <h2><a href="/index.html">Z</a></h2>
+        <h2 class="titulPrincipal">LIMON</h2>
+        <div class="iconos">
+          <ul class="iconosUl">
+            <li class="iconosLi"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="iconosLi"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            <li class="iconosLi"><a href="/productos.html"><i class="fa-solid fa-user"></i></a></li>
+            <li class="iconosLi"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+        </div>
+    
+        <!--Seccion menu-->
+        <div class="menu" id="menu">
+          <ul class="iconosUl">
+            <li class="iconosLi"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </div>
+    
+      </header>
+      <div class="menu-desp" id="menu-desp">
+        <p class="Secciones">Buscar</p>
+        <p class="Secciones">Mis favoritos</p>
+        <p class="Secciones">Iniciar sesión</p>
+        <p class="Secciones">Mi carrito</p>
+      </div>
+      <!--Seccion header-->
+
+      <div class="contenedor-gral">
+        <h3 style="padding-bottom: 1rem;">CONSULTAS RECIBIDAS</h3>
+        <div id="contenedor-cons">
+        </div>
+      </div>
+
+
+
+      <script src="app.js"></script>
 </body>
 </html>
