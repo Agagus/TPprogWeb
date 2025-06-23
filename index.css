@@ -16,16 +16,10 @@
 
 body{
   overflow-x: hidden;
-
   background-color: var(--color-principal);
   transition: 0.4s;
 }
 
-.iconosLi {
-
-  width: 200px;
- 
-}
 
 
 .card-productos .fav {
@@ -43,8 +37,8 @@ cursor: pointer;
 align-items:inherit;
 padding-top: 50px;
   width: 200px;
-  z-index: 9999;
   font-size: 30px;
+  
 }
 
 .fa-user {
@@ -55,29 +49,49 @@ padding-top: 50px;
 
 
 .agregados {
+  font-weight: bold ;
+  align-content:flex-end;
   display: flex;
   flex-direction: column;
-width: auto;
-height: 60px;
-background-color: white;
+  width: auto;
+  height: 130px;
+  background-color: white;
+  
 
+ 
 
+}
 
+.agregados img {
+
+object-fit: cover;
+  border-radius: 4px;
+  width:45px;
 
 }
 
 .precio-descripcion {
-  
-  height: 60px;
+  height: 200px; 
   width: 300px;
+ flex-direction: column;
   font-size:20px;
- margin-right: 50%;
+  margin-right: 50%;
   color:#000000 ;
   flex-direction: column;
   border: solid 1px black;
   background-color: white;
-
+ border-radius: 2px 2px 2px 2px ;
 }
+
+.eliminar {
+  cursor: pointer;
+display: block;
+  font-size: 20px;
+  margin-left: 90%;
+  margin-top: 4px;
+  
+}
+
 
 
 .contenedorModoOscuro {
@@ -299,13 +313,15 @@ width: 100%;
 }
 
 .titulo-desc {
+  padding-top: 10px;
+ margin-top: 10px;
   color: #ffffff;
   display: flex;
   justify-content: center;
   font-size: 30px;
   text-align: center;
   width: 100%;
-  height: auto;
+  height: 60px;
 }
 
 .producto {
@@ -371,12 +387,12 @@ width: 100%;
   width: 600px;
   border-radius: 10px;
   transform: scale(0);
-  transition: transform 0.2s 0.2s;
+  transition: transform 0.3s  0.4s ;
 
 }
 
 .mostrarImagen {
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 
 .close {
@@ -417,7 +433,6 @@ width: 100%;
 
 .contenedor-productos {
   padding-top: 50px;
-  /*padding-bottom: 50%;*/
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -427,6 +442,7 @@ width: 100%;
   justify-content: first-baseline;
   background-color: var(--color-terciario);
   padding-left: 40px;
+  
 }
 
 .contenedor-productos h2 {
@@ -454,6 +470,7 @@ width: 100%;
 .card-productos:hover {
   transform: scale(1.1);
   cursor: pointer;
+ 
 }
 
 .card-descripcion {
