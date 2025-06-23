@@ -96,12 +96,7 @@ boton.addEventListener("click",(e) => {
   const precioTexto = tarjeta.querySelector('.precio').textContent;
   const foto = tarjeta.querySelector(".img-producto").src;
  const precioaNumero = parseInt(precioTexto.replace(/\D/g, ""));
-
-
-
-
-
-  
+ 
   console.log('Descripción:', descripcion);
   console.log('Precio:', precioTexto);
 
@@ -125,7 +120,6 @@ elements.innerHTML = `
 `
 
 carrito.appendChild(elements)
-
 total += precioaNumero;
 valorTotal.textContent=`$${total.toLocaleString("es-AR")}`;
 
@@ -146,15 +140,6 @@ elements.querySelector(".eliminar").addEventListener("click", () => {
 });
 
 
-
-/*
-const iconCarrito = document.querySelector(".icono-carrito")
-const agregados= document.querySelector(".agregados")
-iconCarrito.addEventListener ("click",() => {
- 
-
-
-})*/
 
 
 

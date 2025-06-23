@@ -62,6 +62,11 @@ padding-top: 50px;
 
 }
 
+.invisible {
+display: none;
+
+}
+
 .agregados img {
 
 object-fit: cover;
