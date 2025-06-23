@@ -54,6 +54,9 @@ const darkmode = document.getElementById("dark-light-mode");
 btn.addEventListener("click", () => {
   document.body.classList.toggle("dark"); //aca si cliqueas cambia la clase a dark (modo oscuro).
 });
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark"); //aca si cliqueas cambia la clase a dark (modo oscuro).
+});
 
 //----------------------MENU DESPLEGABLE--------------
 
@@ -96,3 +99,63 @@ const aparecerImagen = (imagen) => {
   contenedorLight.classList.toggle("show");
   imagenesLight.classList.toggle("mostrarImagen");
 };
+
+//Logica carrito
+const favheart = document.querySelectorAll(".fav");
+
+const valorTotal = document.querySelector(".total");
+let total = 0;
+
+favheart.forEach((boton) => {
+  boton.addEventListener("click", (e) => {
+    const tarjeta = e.target.closest(".card-productos");
+
+    const descripcion = tarjeta.querySelector(".card-descripcion").textContent;
+    const precioTexto = tarjeta.querySelector(".precio").textContent;
+    const foto = tarjeta.querySelector(".img-producto").src;
+    const precioaNumero = parseInt(precioTexto.replace(/\D/g, ""));
+
+    console.log("Descripción:", descripcion);
+    console.log("Precio:", precioTexto);
+
+    let carrito = document.querySelector(".icono-carrito");
+
+    const elements = document.createElement("li");
+    elements.setAttribute("data-precio", precioaNumero);
+    elements.classList.add("agregados");
+
+    elements.innerHTML = `
+
+    <div class ="precio-descripcion">
+        <i class="fa-solid fa-xmark eliminar" data-precio="${precioaNumero}"></i>
+        <img src = ${foto} class "foto-producto">
+        <p>${descripcion}</p>
+        <p class="precio-producto">${precioTexto}</p>
+         
+        
+
+    </div>
+`;
+
+    carrito.appendChild(elements);
+
+    total += precioaNumero;
+    valorTotal.textContent = `$${total.toLocaleString("es-AR")}`;
+
+    elements.querySelector(".eliminar").addEventListener("click", () => {
+      const precioProducto = parseInt(elements.getAttribute("data-precio"));
+      total -= precioProducto;
+      valorTotal.textContent = `$${total.toLocaleString("es-AR")}`;
+      elements.remove();
+    });
+  });
+});
+
+/*
+const iconCarrito = document.querySelector(".icono-carrito")
+const agregados= document.querySelector(".agregados")
+iconCarrito.addEventListener ("click",() => {
+ 
+
+
+})*/
