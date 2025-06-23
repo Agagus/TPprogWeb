@@ -170,6 +170,15 @@
     color: #f0f0f0;
     
   }
+<<<<<<< HEAD
+=======
+
+  .dark
+  .contenedor-gral {
+
+    color: #f0f0f0;
+  }
+>>>>>>> 514e4c7e3293fe07fe3423e440882fa450c20451
   
   
   
@@ -197,13 +206,18 @@
   }
   
   .titulPrincipal{
+<<<<<<< HEAD
     margin-left: 110px;
+=======
+    margin-left: 25%;
+>>>>>>> 514e4c7e3293fe07fe3423e440882fa450c20451
   }
   
   .iconos {
     width: 150px;
     height: 80px;
     align-content: center;
+<<<<<<< HEAD
   }
   .iconosUl{
     display: flex;
@@ -224,3 +238,36 @@
   
   /*-------------------------------*/
 
+=======
+ 
+
+  
+  }
+  /*-------------------------------*/
+
+  .consultas-titulo {
+    padding-top: 10px;
+    font-size: 30px;
+ display: flex;
+ justify-content: center;
+
+  }
+
+  .texto-consulta {
+
+    font-size: 30px;
+    display: flex;
+    margin: 20px;
+   
+  }
+
+
+
+.item-cons {
+
+font-size: 40px;
+height:100px;
+margin: 20px;
+
+}
+>>>>>>> 514e4c7e3293fe07fe3423e440882fa450c20451

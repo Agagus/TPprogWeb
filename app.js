@@ -1,5 +1,5 @@
 //----------------------Formulario--------------
-let datosFormulario = JSON.parse(localStorage.getItem("datosFormulario")) || [];
+/*let datosFormulario = JSON.parse(localStorage.getItem("datosFormulario")) || [];
 
 function cargaForm() {
   const mail = document.getElementById("mail").value.trim();
@@ -40,20 +40,15 @@ if (datosFormulario.length > 0) {
     consul.textContent = datosFormulario[i + 1];
 
     mail.classList.add("item-cons");
-    contConsultas.appendChild(mail);
-    contConsultas.appendChild(consul);
-    contConsultas.appendChild(linea);
+  
   }
 }
-
+*/
 //--------------------MODO OSCURO--------------------
 
 const btn = document.getElementById("switch");
 const darkmode = document.getElementById("dark-light-mode");
 
-btn.addEventListener("click", () => {
-  document.body.classList.toggle("dark"); //aca si cliqueas cambia la clase a dark (modo oscuro).
-});
 btn.addEventListener("click", () => {
   document.body.classList.toggle("dark"); //aca si cliqueas cambia la clase a dark (modo oscuro).
 });
@@ -125,17 +120,14 @@ favheart.forEach((boton) => {
     elements.classList.add("agregados");
 
     elements.innerHTML = `
-
     <div class ="precio-descripcion">
         <i class="fa-solid fa-xmark eliminar" data-precio="${precioaNumero}"></i>
         <img src = ${foto} class "foto-producto">
         <p>${descripcion}</p>
         <p class="precio-producto">${precioTexto}</p>
          
-        
-
-    </div>
-`;
+        </div>
+    `;
 
     carrito.appendChild(elements);
 
