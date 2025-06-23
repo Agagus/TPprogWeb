@@ -2,15 +2,66 @@
 <html lang="en">
 
 <head>
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LIMON</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="productos.css">
+
 </head>
 
 <body>
-  <div id="producto-seleccionado">
-
+  <div id="switch" class="contenedorModoOscuro">
+    <i class="icono icono-sol fa-solid fa-sun"></i>
+    <i class="icono icono-luna fa-solid fa-moon"></i>
   </div>
-  <div class="d"></div>
+  <!--Seccion header-->
+  <header class="contenedor-header">
+    <h2><a href="/index.html">Z</a></h2>
+    <h2 class="titulPrincipal">LIMON</h2>
+    <div class="iconos">
+
+      <div class="icono-carrito"><i class="fa-solid fa-cart-shopping">
+        </i>
+        <span class="total">0</span>
+      </div>
+
+
+      <div class="user">
+        <i class="fa-solid fa-user"></i>
+      </div>
+
+    </div>
+
+    <!--Seccion menu-->
+    <div class="menu" id="menu">
+      <ul class="iconosUl">
+        <li class="iconosLi"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </div>
+
+  </header>
+  <div class="menu-desp" id="menu-desp">
+    <p class="Secciones">Buscar</p>
+    <p class="Secciones">Mis favoritos</p>
+    <p class="Secciones">Iniciar sesión</p>
+    <p class="Secciones">Mi carrito</p>
+  </div>
+  <!--Seccion header-->
+
+  <div class="contenedor-gral">
+    <h3 style="padding-bottom: 1rem;" class="consultas-titulo">CONSULTAS RECIBIDAS</h3>
+    <div id="contenedor-cons">
+    </div>
+  </div>
+
+  <script src="form.js"></script>
+  <script src="app.js"></script>
 
 
 </body>
