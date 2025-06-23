@@ -3,22 +3,81 @@
 
 
 * {
-  box-sizing: border-box;
+  margin: 0;
   font-family: "League Spartan", sans-serif;
   --color-principal: #b3c2a7;
   --color-secundario: #99ada2;
   --color-terciario: #d2eadd;
   --color-oscuro:rgba(11, 11, 11, 0.728);
   --color-oscuro2:rgba(81, 76, 76, 0.728);
+  
 }
 
 
-body {
-  margin: 0;
+body{
+  overflow-x: hidden;
+
   background-color: var(--color-principal);
   transition: 0.4s;
 }
 
+.iconosLi {
+
+  width: 200px;
+ 
+}
+
+
+.card-productos .fav {
+display: block;
+  width: 30px;
+font-size: 30px;
+  padding-top: 2px;
+justify-content: center;
+margin-left: 120px;
+  
+}
+
+.icono-carrito {
+cursor: pointer;
+align-items:inherit;
+padding-top: 50px;
+  width: 200px;
+  z-index: 9999;
+  font-size: 30px;
+}
+
+.fa-user {
+
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+
+.agregados {
+  display: flex;
+  flex-direction: column;
+width: auto;
+height: 60px;
+background-color: white;
+
+
+
+
+}
+
+.precio-descripcion {
+  
+  height: 60px;
+  width: 300px;
+  font-size:20px;
+ margin-right: 50%;
+  color:#000000 ;
+  flex-direction: column;
+  border: solid 1px black;
+  background-color: white;
+
+}
 
 
 .contenedorModoOscuro {
@@ -45,11 +104,17 @@ body {
 }
 
 .icono {
-  position: absolute;
+ 
   font-size: 24px;
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+
+.iconos {
+
+  justify-content: center;
+  align-content: space-evenly;
+}
 
 /* día */
 
@@ -184,50 +249,46 @@ margin-left: 90%;
 
 /*---------Header--------*/
 .contenedor-header {
+  position:sticky;
+width: 100%;
   display: flex;
   font-size: 40px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
   color: #ffffff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  height: 100px;
+  height: auto;
   background-color: var(--color-secundario);
 }
 
 .contenedor-header a {
+ 
   text-decoration: none;
   color: #ffffff;
+  margin-left: 50px;
 }
 
 .titulPrincipal{
-  margin-left: 110px;
+  
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
 }
 
 .iconos {
+  gap: 5px;
+  display: flex;
   width: 150px;
   height: 80px;
-  align-content: center;
+  margin-left: 20%;
 }
-.iconosUl{
-  display: flex;
-  list-style: none;
-  padding: 0px;
-  justify-content: space-around;
 
-}
-.iconosLi{
-  font-size: 20px;
-
-}
-.iconosLi i{
-  color: #ffffff;
-}
 
 /*----------FIN - Header----------*/
 
 /*----------Descuentos------------*/
 .contenedor-descuentos {
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -336,15 +397,21 @@ margin-left: 90%;
 
 
 .nuestros-productos {
+ 
   color: #ffffff;
   margin-top: 2px;
   background-color: var(--color-secundario);
   display: block;
   font-size: 30px;
   text-align: center;
-  width: 100%;
   height: 60px;
+  width: 100%;
   align-content: center;
+}
+
+.nuestros-productos p {
+
+  margin: auto;
 }
 
 

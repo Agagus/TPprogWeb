@@ -81,6 +81,60 @@ const aparecerImagen = (imagen) => {
 };
 
 
+//Logica carrito 
+const favheart = document.querySelectorAll(".fav")
+
+
+favheart.forEach(boton => {
+boton.addEventListener("click",(e) => {
+
+  const tarjeta = e.target.closest('.card-productos');
+  const descripcion = tarjeta.querySelector('.card-descripcion').textContent;
+  const precio = tarjeta.querySelector('.precio').textContent;
+
+
+  
+  console.log('Descripción:', descripcion);
+  console.log('Precio:', precio);
+
+
+
+let carrito = document.querySelector(".icono-carrito")
+
+const elements=document.createElement("li")
+elements.classList.add("agregados")
+
+
+elements.innerHTML = `
+
+    <div class ="precio-descripcion">
+
+        <p>${descripcion}</p>
+        <p>${precio}</p>
+        
+
+    </div>
+`
+
+carrito.appendChild(elements)
+})
+
+});
+
+const iconCarrito = document.querySelector(".icono-carrito")
+const agregados= document.querySelector(".agregados")
+iconCarrito.addEventListener ("click",() => {
+ 
+
+
+})
+
+
+
+
+
+
+
 
 
 
