@@ -1,7 +1,7 @@
 Trabajo Práctico programación web 1
 
 Integrantes:
-  - Tatiana Veliz Amestoy
+  - Tatiana Amestoy
   - Mariano Martinez
   - Hernan Gonzalez
   - Agustina Zanetti
